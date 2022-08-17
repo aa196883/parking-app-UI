@@ -21,7 +21,9 @@
         </select>
         <select class="form-select p-2">
             <option selected hidden>Assignee</option>
-            <option *ngFor="let assignee of assignees">{{assignee}}</option>
+            <ng-container *ngFor="let parking of parkings">
+              <option *ngIf="parking.assignee">{{parking.assignee}}</option>
+            </ng-container>
         </select>
         <div class="d-flex flex-grow-1">
             <button class="d-flex btn btn-primary flex-grow-1 p-2" style="text-align: left;"><i
