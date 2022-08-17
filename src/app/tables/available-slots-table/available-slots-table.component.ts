@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Parking } from '../Parking';
-import { RequestServiceService } from '../request-service.service';
+import { Parking } from '../../Parking';
+import { RequestServiceService } from '../../request-service.service';
 
 @Component({
   selector: 'app-available-slots-table',

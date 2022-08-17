@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { ParkingSlotsPageComponent } from './parking-slots-page/parking-slots-page.component';
-import { HomePageComponent } from './home-page/home-page.component';
+import { ParkingSlotsPageComponent } from './pages/parking-slots-page/parking-slots-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
