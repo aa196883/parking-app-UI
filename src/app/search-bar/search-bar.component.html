@@ -1,0 +1,33 @@
+<form class="d-flex flex-wrap flex-lg-nowrap" style="gap: 0.5rem;">
+    <div class="d-flex flex-grow-1 flex-wrap flex-sm-nowrap" style="gap: 0.5rem;">
+        <div class="input-group">
+            <input class="form-control p-2" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #d="ngbDatepicker" />
+            <button class="btn" (click)="d.toggle()" type="button">
+                <i class="icons8-calendar"></i>
+            </button>
+        </div>
+        <input type="text" class="form-control p-2" placeholder="Parking number">
+        <select class="form-select p-2">
+            <option selected hidden>Status</option>
+            <option>Available</option>
+            <option>Booked</option>
+            <option>Released</option>
+        </select>
+    </div>
+    <div class="d-flex flex-grow-1 flex-wrap flex-sm-nowrap" style="gap: 0.5rem;">
+        <select class="form-select p-2">
+            <option selected hidden>Owner</option>
+            <option *ngFor="let parking of parkings">{{parking.owner}}</option>
+        </select>
+        <select class="form-select p-2">
+            <option selected hidden>Assignee</option>
+            <option *ngFor="let assignee of assignees">{{assignee}}</option>
+        </select>
+        <div class="d-flex flex-grow-1">
+            <button class="d-flex btn btn-primary flex-grow-1 p-2" style="text-align: left;"><i
+                class="icons8-search"></i><label>Search</label></button>
+        </div>
+
+    </div>
+
+</form>

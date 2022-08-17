@@ -1,0 +1,28 @@
+<div class="d-flex flex-row" style="gap:56px; ">
+  <!-- left col  -->
+  <div class="d-flex flex-column" style="gap:36px;">
+    <!-- top card  -->
+    <app-booked-slot-card></app-booked-slot-card>
+    <!-- buttom card  -->
+    <app-released-slot-card></app-released-slot-card>
+  </div>
+  <!-- right col  -->
+  <div class="d-none d-sm-flex flex-column flex-grow-1" style="gap:36px;">
+    <!-- top table  -->
+    <div>
+      <div class="d-flex flex-row justify-content-between align-items-center">
+        <h4>Available slots</h4>
+        <a href="#">View all</a>
+      </div>
+      <app-available-slots-table></app-available-slots-table>
+    </div>
+    <!-- buttom table  -->
+    <div>
+      <div class="d-flex flex-row justify-content-between align-items-center">
+        <h4>Booked slots</h4>
+        <a href="#">View all</a>
+      </div>
+      <app-booked-slots-table></app-booked-slots-table>
+    </div>
+  </div>
+</div>

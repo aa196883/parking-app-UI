@@ -1,0 +1,56 @@
+<div class="d-flex d-row d-none d-lg-block">
+  <table class="table table-borderless">
+    <thead class="thead-light">
+      <tr>
+        <th>PARKING NUMBER</th>
+        <th>OWNER</th>
+        <th>STATUS</th>
+        <th>ASSIGNEE</th>
+        <th>ACTION</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let parking of array">
+        <td>{{parking.parkingNumber}}</td>
+        <td>{{parking.owner}}</td>
+        <td>{{parking.status}}</td>
+        <td>{{parking.assignee}}</td>
+        <container-element [ngSwitch]="parking.action">
+          <td *ngSwitchCase="1">
+            <app-owned-slot-table-cell-action></app-owned-slot-table-cell-action>
+          </td>
+          <td *ngSwitchCase="2">
+            <app-assigned-slot-table-cell-action></app-assigned-slot-table-cell-action>
+          </td>
+          <td *ngSwitchCase="3">
+            <app-available-slot-table-cell-action></app-available-slot-table-cell-action>
+          </td>
+          <td *ngSwitchDefault></td>
+        </container-element>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="d-flex flex-column d-none d-sm-block d-lg-none">
+  <div *ngFor="let parking of array" class="card shadow flex-grow-1">
+    <div class="card-body px-0">
+      <div class="d-flex justify-content-between  align-items-center px-3" style="gap: 1rem;">
+        <label>{{parking.parkingNumber}}</label>
+        <label class="p-2 flex-grow-1 bd-highlight">{{parking.owner}}</label>
+        <container-element [ngSwitch]="parking.action">
+          <td *ngSwitchCase="1">
+            <app-owned-slot-table-cell-action></app-owned-slot-table-cell-action>
+          </td>
+          <td *ngSwitchCase="2">
+            <app-assigned-slot-table-cell-action></app-assigned-slot-table-cell-action>
+          </td>
+          <td *ngSwitchCase="3">
+            <app-available-slot-table-cell-action></app-available-slot-table-cell-action>
+          </td>
+          <td *ngSwitchDefault></td>
+        </container-element>
+      </div>
+    </div>
+  </div>
+</div>
