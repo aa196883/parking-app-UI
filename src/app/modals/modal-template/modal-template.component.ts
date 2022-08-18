@@ -1,7 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { SdwdsModalService } from '@sdworx/sdwds-modal';
-import { ModalFooterButtonsComponent } from 'src/app/buttons/modal-footer-buttons/modal-footer-buttons.component';
-//your custom component needs to import the NgbActiveModal service from ng-bootstrap
+import { Component, Input, OnInit } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -10,13 +7,10 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./modal-template.component.css']
 })
 export class ModalTemplateComponent {
-  modalHeader!:string
-  modalBody!:string
-  modalOrange!:string
-  modalWhite!:string
+  @Input() modalWhite = '';
+  @Input() modalOrange = '';
+  @Input() modalHeader = '';
+  @Input() modalBody = '';
 
   constructor(public activeModal: NgbActiveModal) {}
-
-
-
 }
