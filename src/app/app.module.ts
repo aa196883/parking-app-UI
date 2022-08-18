@@ -17,6 +17,9 @@ import { OwnedSlotTableCellActionComponent } from './owned-slot-table-cell-actio
 import { AssignedSlotTableCellActionComponent } from './buttons/assigned-slot-table-cell-action/assigned-slot-table-cell-action.component';
 import { AvailableSlotTableCellActionComponent } from './buttons/available-slot-table-cell-action/available-slot-table-cell-action.component';
 import { BookedSlotCardBookedComponent } from './cards/booked-slot-card-booked/booked-slot-card-booked.component';
+import { CancelBookingComponent } from './modals/cancel-booking/cancel-booking.component';
+import { ModalFooterButtonsComponent } from './buttons/modal-footer-buttons/modal-footer-buttons.component';
+import { SdwdsModalModule } from '@sdworx/sdwds-modal';
 
 @NgModule({
   declarations: [
@@ -33,12 +36,15 @@ import { BookedSlotCardBookedComponent } from './cards/booked-slot-card-booked/b
     AssignedSlotTableCellActionComponent,
     AvailableSlotTableCellActionComponent,
     BookedSlotCardBookedComponent,
+    CancelBookingComponent,
+    ModalFooterButtonsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    SdwdsModalModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
