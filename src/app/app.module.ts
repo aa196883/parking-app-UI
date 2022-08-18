@@ -22,6 +22,7 @@ import { TablePaginationComponent } from './table-pagination/table-pagination.co
 import { CancelBookingComponent } from './modals/cancel-booking/cancel-booking.component';
 import { ModalFooterButtonsComponent } from './buttons/modal-footer-buttons/modal-footer-buttons.component';
 import { SdwdsModalModule } from '@sdworx/sdwds-modal';
+import { ModalTemplateComponent } from './modals/modal-template/modal-template.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { SdwdsModalModule } from '@sdworx/sdwds-modal';
     TablePaginationComponent,
     CancelBookingComponent,
     ModalFooterButtonsComponent,
+    ModalTemplateComponent,
   ],
   imports: [
     BrowserModule,

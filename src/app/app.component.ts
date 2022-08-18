@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Parking } from './Parking';
 import { SdwdsModalService } from '@sdworx/sdwds-modal';
 import { CancelBookingComponent } from './modals/cancel-booking/cancel-booking.component';
+import { ModalTemplateComponent } from './modals/modal-template/modal-template.component';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,5 @@ export class AppComponent implements OnInit {
       .show<CancelBookingComponent, boolean>(CancelBookingComponent)
       .subscribe(res => {});
   }
-
-
 
 }

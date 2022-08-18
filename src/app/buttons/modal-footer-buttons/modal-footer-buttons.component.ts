@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-modal-footer-buttons',
@@ -9,9 +10,15 @@ export class ModalFooterButtonsComponent implements OnInit {
   @Input() whiteButton = '';
   @Input() orangeButton = '';
 
-  constructor() { }
+  constructor(public activeModal: NgbActiveModal) { }
 
   ngOnInit(): void {
+  }
+
+  ok(): void {
+    //close the current modal with a specific return value
+    //this triggers the subscription we have on the modal in our typescript code
+    this.activeModal.close(true);
   }
 
 }
