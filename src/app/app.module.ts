@@ -23,6 +23,8 @@ import { CancelBookingComponent } from './modals/cancel-booking/cancel-booking.c
 import { ModalFooterButtonsComponent } from './buttons/modal-footer-buttons/modal-footer-buttons.component';
 import { SdwdsModalModule } from '@sdworx/sdwds-modal';
 import { ModalTemplateComponent } from './modals/modal-template/modal-template.component';
+import { ReleaseParkingComponent } from './modals/release-parking/release-parking.component';
+import { RevokeParkingComponent } from './modals/revoke-parking/revoke-parking.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,8 @@ import { ModalTemplateComponent } from './modals/modal-template/modal-template.c
     CancelBookingComponent,
     ModalFooterButtonsComponent,
     ModalTemplateComponent,
+    ReleaseParkingComponent,
+    RevokeParkingComponent,
   ],
   imports: [
     BrowserModule,

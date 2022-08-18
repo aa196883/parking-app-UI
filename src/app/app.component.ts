@@ -3,6 +3,8 @@ import { Parking } from './Parking';
 import { SdwdsModalService } from '@sdworx/sdwds-modal';
 import { CancelBookingComponent } from './modals/cancel-booking/cancel-booking.component';
 import { ModalTemplateComponent } from './modals/modal-template/modal-template.component';
+import { ReleaseParkingComponent } from './modals/release-parking/release-parking.component';
+import { RevokeParkingComponent } from './modals/revoke-parking/revoke-parking.component';
 
 @Component({
   selector: 'app-root',
@@ -17,10 +19,21 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  showSimpleModal(): void {
-    console
+  showCancelModal(): void {
     this.sdwdsModalService
       .show<CancelBookingComponent, boolean>(CancelBookingComponent)
+      .subscribe(res => {});
+  }
+
+  showReleaseModal(): void {
+    this.sdwdsModalService
+      .show<ReleaseParkingComponent, boolean>(ReleaseParkingComponent)
+      .subscribe(res => {});
+  }
+
+  showRevokeModal(): void {
+    this.sdwdsModalService
+      .show<RevokeParkingComponent, boolean>(RevokeParkingComponent)
       .subscribe(res => {});
   }
 
