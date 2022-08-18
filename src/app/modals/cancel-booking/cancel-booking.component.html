@@ -1,10 +1,10 @@
-<div class="modal sdwds-modal" tabindex="-1" role="dialog">
+<!-- <div class="modal sdwds-modal" tabindex="-1" role="dialog" style="height: 100px; ;">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Modal dialog</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="false">&times;</span>
         </button>
       </div>
       <div class="modal-body">
@@ -15,4 +15,24 @@
       <app-modal-footer-buttons [orangeButton]="'Yes'" [whiteButton]="'No'"></app-modal-footer-buttons>
     </div>
   </div>
+</div> -->
+
+<div class="modal-header">
+  <h4 class="modal-title">
+    ...
+  </h4>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="activeModal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  ...
+</div>
+<div class="modal-footer">
+  <button class="btn  primary" (click)="ok()">
+    OK
+  </button>
+  <button class="btn " (click)="activeModal.dismiss()">
+    Cancel
+  </button>
 </div>

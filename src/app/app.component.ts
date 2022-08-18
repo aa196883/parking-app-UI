@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
   }
 
   showSimpleModal(): void {
+    console
     this.sdwdsModalService
       .show<CancelBookingComponent, boolean>(CancelBookingComponent)
       .subscribe(res => {});
