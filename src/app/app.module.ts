@@ -25,6 +25,7 @@ import { SdwdsModalModule } from '@sdworx/sdwds-modal';
 import { ModalTemplateComponent } from './modals/modal-template/modal-template.component';
 import { ReleaseParkingComponent } from './modals/release-parking/release-parking.component';
 import { RevokeParkingComponent } from './modals/revoke-parking/revoke-parking.component';
+import { CloseButtonComponent } from './buttons/close-button/close-button.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { RevokeParkingComponent } from './modals/revoke-parking/revoke-parking.c
     ModalTemplateComponent,
     ReleaseParkingComponent,
     RevokeParkingComponent,
+    CloseButtonComponent,
   ],
   imports: [
     BrowserModule,
