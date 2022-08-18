@@ -6,6 +6,8 @@ import { Parking } from './Parking';
 })
 export class RequestServiceService {
   array: Parking[] = [];
+  slotIsBooked: boolean = false;
+  slotIsReleased: boolean = true;
 
   constructor() {
     this.array.push(new Parking('B2', 'Tom Smith', 'Available', '', 3));
@@ -17,5 +19,13 @@ export class RequestServiceService {
 
   getArray(): Parking[]{
     return this.array;
+  }
+
+  getBookedSlotStatus(): boolean {
+    return this.slotIsBooked
+  }
+  
+  getReleasedSlotStatus(): boolean {
+    return this.slotIsReleased
   }
 }

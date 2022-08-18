@@ -2,9 +2,11 @@
   <!-- left col  -->
   <div class="d-flex flex-column" style="gap:36px;">
     <!-- top card  -->
-    <app-booked-slot-card-not-booked></app-booked-slot-card-not-booked>
+    <div *ngIf="slotIsBooked; else NotBooked"><app-booked-slot-card-booked></app-booked-slot-card-booked></div>
+    <ng-template #NotBooked><app-booked-slot-card-not-booked></app-booked-slot-card-not-booked></ng-template>
     <!-- buttom card  -->
-    <app-released-slot-card></app-released-slot-card>
+    <div *ngIf="slotIsReleased; else NotReleased"><app-released-slot-card-released></app-released-slot-card-released></div>
+    <ng-template #NotReleased><app-released-slot-card-not-released></app-released-slot-card-not-released></ng-template>
   </div>
   <!-- right col  -->
   <div class="d-none d-sm-flex flex-column flex-grow-1" style="gap:36px;">

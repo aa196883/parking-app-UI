@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestServiceService } from '../../request-service.service';
+
 
 @Component({
   selector: 'app-home-page',
@@ -6,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-
-  constructor() { }
+  slotIsBooked: boolean;
+  slotIsReleased: boolean;
+  
+  constructor(private service : RequestServiceService) {
+    this.slotIsBooked = this.service.getBookedSlotStatus();
+    this.slotIsReleased = this.service.getReleasedSlotStatus();
+  }
 
   ngOnInit(): void {
   }

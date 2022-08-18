@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "jest",
-    "test:watch" : "jest --watch",
-    "test:coverage" : "jest --coverage"
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +24,7 @@
     "@ng-bootstrap/ng-bootstrap": "^13.0.0",
     "@popperjs/core": "^2.11.5",
     "@sdworx/sdwds-icons": "^5.0.7",
+    "@sdworx/sdwds-modal": "^13.0.0",
     "@sdworx/sdwds-styling": "^5.0.4",
     "@types/jest": "^28.1.6",
     "bootstrap": "^5.2.0",

@@ -7,7 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AvailableSlotsTableComponent } from './tables/available-slots-table/available-slots-table.component';
 import { BookedSlotsTableComponent } from './tables/booked-slots-table/booked-slots-table.component';
 import { BookedSlotCardNotBookedComponent } from './cards/booked-slot-card-not-booked/booked-slot-card-not-booked.component';
-import { ReleasedSlotCardComponent } from './cards/released-slot-card/released-slot-card.component';
+import { ReleasedSlotCardComponent } from './cards/released-slot-card-not-released/released-slot-card-not-released.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ParkingSlotsPageComponent } from './pages/parking-slots-page/parking-slots-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -17,6 +17,8 @@ import { OwnedSlotTableCellActionComponent } from './owned-slot-table-cell-actio
 import { AssignedSlotTableCellActionComponent } from './buttons/assigned-slot-table-cell-action/assigned-slot-table-cell-action.component';
 import { AvailableSlotTableCellActionComponent } from './buttons/available-slot-table-cell-action/available-slot-table-cell-action.component';
 import { BookedSlotCardBookedComponent } from './cards/booked-slot-card-booked/booked-slot-card-booked.component';
+import { ReleasedSlotCardReleasedComponent } from './cards/released-slot-card-released/released-slot-card-released.component';
+import { TablePaginationComponent } from './table-pagination/table-pagination.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { BookedSlotCardBookedComponent } from './cards/booked-slot-card-booked/b
     AssignedSlotTableCellActionComponent,
     AvailableSlotTableCellActionComponent,
     BookedSlotCardBookedComponent,
+    ReleasedSlotCardReleasedComponent,
+    TablePaginationComponent,
   ],
   imports: [
     BrowserModule,
