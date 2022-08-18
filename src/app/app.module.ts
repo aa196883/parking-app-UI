@@ -19,6 +19,9 @@ import { AvailableSlotTableCellActionComponent } from './buttons/available-slot-
 import { BookedSlotCardBookedComponent } from './cards/booked-slot-card-booked/booked-slot-card-booked.component';
 import { ReleasedSlotCardReleasedComponent } from './cards/released-slot-card-released/released-slot-card-released.component';
 import { TablePaginationComponent } from './table-pagination/table-pagination.component';
+import { CancelBookingComponent } from './modals/cancel-booking/cancel-booking.component';
+import { ModalFooterButtonsComponent } from './buttons/modal-footer-buttons/modal-footer-buttons.component';
+import { SdwdsModalModule } from '@sdworx/sdwds-modal';
 
 @NgModule({
   declarations: [
@@ -37,12 +40,15 @@ import { TablePaginationComponent } from './table-pagination/table-pagination.co
     BookedSlotCardBookedComponent,
     ReleasedSlotCardReleasedComponent,
     TablePaginationComponent,
+    CancelBookingComponent,
+    ModalFooterButtonsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    SdwdsModalModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
