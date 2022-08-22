@@ -1,25 +1,28 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light p-0 d-flex align-items-stretch" >
-    <a class="navbar-brand m-0" href="#">
-      <img src="/assets/SDWorx_logo_normal.svg" style="width:92px; height: 32px;">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse   d-flex align-items-stretch" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li [routerLinkActive]="['active']"> <a class="nav-link" [routerLink]="['home']">One</a></li>
-        <li [routerLinkActive]="['active']"> <a class="nav-link" [routerLink]="['parking_slots']">Second</a></li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-0 d-flex">
+  <a class="navbar-brand m-0" href="#">
+    <img src="/assets/SDWorx_logo_normal.svg" style="width:92px; height: 32px;">
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse d-flex align-self-stretch" id="navbarSupportedContent">
+    <ul class="navbar-nav align-self-stretch">
+      <li class="d-flex" [routerLinkActive]="['active']"> <a class="nav-link align-self-center"
+          [routerLink]="['home']" style="font-weight: bold;">Home</a></li>
+      <li class="d-flex" [routerLinkActive]="['active']"> <a class="nav-link align-self-center"
+          [routerLink]="['parking_slots']"  style="font-weight: bold;">All parking slots</a></li>
+    </ul>
+    <li class="nav-item dropdown d-md-block d-none ms-auto">
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"  style="font-weight: bold;">{{name}}</a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
       </ul>
-      <li class="nav-item dropdown d-md-block d-none ms-auto">
-        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">{{name}}</a>
-        <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </li>
-    </div>
+    </li>
+  </div>
 </nav>

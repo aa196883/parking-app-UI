@@ -1,5 +1,12 @@
 li.active {
-    color : #BB3500;
     background-color: rgba(233, 78, 15, 0.04);
     border-bottom: 2px solid #BB3500;
+}
+
+li.active a {
+    color : #BB3500;
+}
+
+a:hover {
+    color : #BB3500;
 }
