@@ -27,6 +27,7 @@ import { ReleaseParkingComponent } from './modals/release-parking/release-parkin
 import { RevokeParkingComponent } from './modals/revoke-parking/revoke-parking.component';
 import { BookParkingComponent } from './modals/book-parking/book-parking.component';
 import { CloseButtonComponent } from './buttons/close-button/close-button.component';
+import { QRModalComponent } from './modals/qr-modal/qr-modal.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { CloseButtonComponent } from './buttons/close-button/close-button.compon
     RevokeParkingComponent,
     BookParkingComponent,
     CloseButtonComponent,
+    QRModalComponent,
   ],
   imports: [
     BrowserModule,
