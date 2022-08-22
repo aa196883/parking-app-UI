@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SdwdsModalService } from '@sdworx/sdwds-modal';
+import { ReleaseParkingComponent } from 'src/app/modals/release-parking/release-parking.component';
 
 @Component({
   selector: 'app-released-slot-card-not-released',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReleasedSlotCardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sdwdsModalService: SdwdsModalService) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  showReleaseModal(): void {
+    this.sdwdsModalService
+      .show<ReleaseParkingComponent, boolean>(ReleaseParkingComponent)
+      .subscribe(res => {});
   }
 
 }

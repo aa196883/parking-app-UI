@@ -12,12 +12,10 @@ export class ModalFooterButtonsComponent implements OnInit {
 
   constructor(public activeModal: NgbActiveModal) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   ok(): void {
     //close the current modal with a specific return value
-    //this triggers the subscription we have on the modal in our typescript code
     this.activeModal.close(true);
   }
 

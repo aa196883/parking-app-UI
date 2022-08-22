@@ -8,9 +8,8 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class CloseButtonComponent implements OnInit {
 
-  constructor(public activeModal: NgbActiveModal) { }
+  constructor(public activeModal: NgbActiveModal) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

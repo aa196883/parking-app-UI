@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SdwdsModalService } from '@sdworx/sdwds-modal';
+import { CancelBookingComponent } from 'src/app/modals/cancel-booking/cancel-booking.component';
 
 @Component({
   selector: 'app-booked-slot-card-booked',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookedSlotCardBookedComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sdwdsModalService: SdwdsModalService) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  showCancelModal(): void {
+    this.sdwdsModalService
+      .show<CancelBookingComponent, boolean>(CancelBookingComponent)
+      .subscribe(res => {});
   }
 
 }

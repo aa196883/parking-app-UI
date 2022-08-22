@@ -9,7 +9,6 @@ export class AssignedSlotTableCellActionComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

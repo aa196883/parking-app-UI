@@ -1,19 +1,14 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light" >
-  <div class="container-fluid">
-    <a class="navbar-brand m-0 p-0" href="#">
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-0 d-flex align-items-stretch" >
+    <a class="navbar-brand m-0" href="#">
       <img src="/assets/SDWorx_logo_normal.svg" style="width:92px; height: 32px;">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="parking_slots">All parking slots</a>
-        </li>
+    <div class="collapse navbar-collapse   d-flex align-items-stretch" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li [routerLinkActive]="['active']"> <a class="nav-link" [routerLink]="['home']">One</a></li>
+        <li [routerLinkActive]="['active']"> <a class="nav-link" [routerLink]="['parking_slots']">Second</a></li>
       </ul>
       <li class="nav-item dropdown d-md-block d-none ms-auto">
         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">{{name}}</a>
@@ -27,5 +22,4 @@
         </ul>
       </li>
     </div>
-  </div>
 </nav>
