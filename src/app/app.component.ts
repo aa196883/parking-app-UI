@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Parking } from './Parking';
 import { SdwdsModalService } from '@sdworx/sdwds-modal';
 import { CancelBookingComponent } from './modals/cancel-booking/cancel-booking.component';
-import { ModalTemplateComponent } from './modals/modal-template/modal-template.component';
+import { ModalTemplateComponent } from './modals/text-modal-template/text-modal-template.component';
 import { ReleaseParkingComponent } from './modals/release-parking/release-parking.component';
 import { RevokeParkingComponent } from './modals/revoke-parking/revoke-parking.component';
 

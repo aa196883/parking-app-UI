@@ -2,9 +2,9 @@ import { Component, Input, OnInit } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-modal-template',
-  templateUrl: './modal-template.component.html',
-  styleUrls: ['./modal-template.component.css']
+  selector: 'app-text-modal-template',
+  templateUrl: './text-modal-template.component.html',
+  styleUrls: ['./text-modal-template.component.css']
 })
 export class ModalTemplateComponent {
   @Input() modalWhite = '';

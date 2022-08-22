@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-import { ModalTemplateComponent } from '../modal-template/modal-template.component';
+import { ModalTemplateComponent } from '../text-modal-template/text-modal-template.component';
 
 @Component({
   selector: 'app-cancel-booking',
