@@ -9,7 +9,6 @@ export class BookedSlotCardNotBookedComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }
