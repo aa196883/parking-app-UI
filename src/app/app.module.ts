@@ -26,6 +26,7 @@ import { ModalTemplateComponent } from './modals/modal-template/modal-template.c
 import { ReleaseParkingComponent } from './modals/release-parking/release-parking.component';
 import { RevokeParkingComponent } from './modals/revoke-parking/revoke-parking.component';
 import { BookParkingComponent } from './modals/book-parking/book-parking.component';
+import { CloseButtonComponent } from './buttons/close-button/close-button.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { BookParkingComponent } from './modals/book-parking/book-parking.compone
     ReleaseParkingComponent,
     RevokeParkingComponent,
     BookParkingComponent,
+    CloseButtonComponent,
   ],
   imports: [
     BrowserModule,
