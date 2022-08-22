@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-div.modal-content{
-  margin: auto;
+
+
+
+.sdwds-modal{
+  --sdwds-modal-sm-max-width:272px;
 }
